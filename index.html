@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Irina Korbut</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <header>
+        <h1>Korbut Irina</h1>
+        <img src="Irina Korbut.jpg" alt="Students photo" />
+      </header>
+      <main>
+        <ol>
+          <li>
+            <strong>Contact Info:</strong> 
+            <ul>                                
+              <li><a href="tel:+375297510477">+375(29)751-04-77 </a>(Viber, Telegram, Watsapp)</li>
+              <li><a href="skype:Korbut Irina">Korbut Irina</a></li>              
+              <li><a href="mailto:irisharomka96@gmail.com"">irisharomka96@gmail.com</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              <strong>Goals:</strong> <br />
+              I want to learn front end development and become cool programmer.
+              And I want to improve my skills every day in order to become
+              better and better. I ready to study and practice all day and all
+              night.
+            </p>
+          </li>
+          <li>
+            <p><strong>Basic knoweledge:</strong> HTML, CSS, JS, GitHub.</p>
+          </li>
+          <li>
+            <strong>Code examples:</strong> <br />
+            <pre>
+                "use strict";
+                function formattedPhone(phone) {
+                if (!checkIsNumber(phone)) {
+                    return "Number format is wrong.";
+                } else {
+                    if (phone.length == 12) {
+                    return (
+                        phone.slice(0, 2) +
+                        " (" +
+                        phone.slice(2, 5) +
+                        ") " +
+                        phone.slice(5, 8) +
+                        "-" +
+                        phone.slice(8, 10) +
+                        "-" +
+                        phone.slice(10)
+                    );
+                    } else {
+                    return "Сheck the entered number.";
+                    }
+                }
+                }
+                function checkIsNumber(phone) {
+                for (let i = 1; i &lt; phone.length; i++) {
+                    if (isNaN(parseInt(phone[i]))) {
+                    return false;
+                    }
+                }
+                return true;
+                }
+                console.log(formattedPhone(prompt("Enter phone number", "+71234567890")));
+                </pre
+            >
+          </li>
+          <li>
+            <p>
+              <strong>Education:</strong> <br />I passed the HTML, CSS and JS
+              basic courses on HTMLacademy and Codecademy. Also I passed RS School front-end training.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>English:</strong> <br />
+              My English level is about A2 according to Epam test. I have
+              studied with teacher twice a week.
+            </p>
+          </li>
+        </ol>
+      </main>
+    </section>
+  </body>
+</html>
