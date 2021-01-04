@@ -7,17 +7,20 @@ body {
   width: 100vw;
   font-size: 10px;
   overflow-x: hidden;
+  background-color: #ccc3da;
 
   .wrapper {
     width: 1000px;
     margin: auto;
     height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 
 header {
-  height: 20vh;
+  height: 140px;
   border-bottom: 1px solid #673ab7;
+  padding: 10px 0;
 
   .header {
     height: 100%;
@@ -52,8 +55,8 @@ header {
 
 main {
   display: flex;
-  height: 69vh;
-  font-size: 1.08rem;
+  height: 800px;
+  font-size: 1.6rem;
 
   .main-info {
     display: flex;
@@ -61,6 +64,17 @@ main {
     width: 70%;
     height: 100%;
     padding-right: 5px;
+
+    .info {
+
+      &__item {
+        margin-bottom: 20px;
+      }
+
+      h4 {
+        margin-bottom: 5px;
+      }
+    }
   }
 
   .skills-container {
@@ -68,6 +82,7 @@ main {
     align-items: center;
     width: 30%;
     height: 100%;
+    font-size: 1.4rem;
   }
 
   .skills {
@@ -75,21 +90,20 @@ main {
     width: 90%;
     margin: auto;
 
-    &__title {
-      font-size: 1.2rem;
+    &__title {      
       margin-bottom: 5px;
     }
 
     &__info {
       .skill {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
       }
 
       .level {
         width: 80%;
-        height: 8px;
+        height: 10px;
         margin: auto;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         background-color: white;
         outline: 1px solid #673ab7;
         outline-offset: -1px;
@@ -100,27 +114,27 @@ main {
         }
 
         .html {
-          width: 80%;
-        }
-
-        .css {
           width: 70%;
         }
 
-        .sass {
+        .css {
           width: 60%;
         }
 
+        .sass {
+          width: 50%;
+        }
+
         .js {
-          width: 62%;
+          width: 52%;
         }
 
         .chart {
-          width: 58%;
+          width: 48%;
         }
 
         .git {
-          width: 61%;
+          width: 51%;
         }
 
         .webpack {
@@ -140,16 +154,19 @@ main {
 }
 
 footer {
-  height: 10vh;
-  font-size: 1.1rem;
+  height: 100px;
+  font-size: 1.2rem;
   border-top: 1px solid #673ab7;
 
   .contacts {
-    margin: 5px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     &__title {
       text-align: center;
-      font-size: 1.05rem;
+      font-size: 1.4rem;
     }
 
     &__list {
@@ -179,5 +196,5 @@ a {
   color: black;
 }
 a:hover {
-  color: #4d298d;
+  color: #5616c4;
 }
