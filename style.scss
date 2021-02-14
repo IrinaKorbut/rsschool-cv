@@ -164,14 +164,14 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 160px;
+  height: 110px;
   font-size: 1.2rem;
   font-weight: 600;
   border-top: 1px solid #673ab7;
 
   .contacts {
     width: 100%;
-    height: 40%;
+    height: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -188,13 +188,16 @@ footer {
       justify-content: space-between;
       text-align: center;
       padding: 0;
-      width: 20%;
+      width: 25%;
 
       &__item {
         display: flex;
         justify-content: center;
 
         a {
+          display: flex;
+          align-items: center;
+          
           .icons {
             width: 30px;
           }
@@ -203,12 +206,8 @@ footer {
     }
   }
 
-  .presentation-link {
-    margin: 10px 0;
-  }
-
   .logo-year-container {
-    height: 30%;
+    height: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
