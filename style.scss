@@ -67,7 +67,6 @@ main {
     padding-right: 5px;
 
     .info {
-
       &__item {
         margin-bottom: 20px;
       }
@@ -91,63 +90,69 @@ main {
     width: 90%;
     margin: auto;
 
-    &__title {      
+    &__title {
       margin-bottom: 5px;
     }
 
     &__info {
+      padding: 0;
+
       .skill {
-        margin-bottom: 10px;
-      }
+        list-style: none;
 
-      .level {
-        width: 80%;
-        height: 10px;
-        margin: auto;
-        margin-bottom: 10px;
-        background-color: white;
-        outline: 1px solid #673ab7;
-        outline-offset: -1px;
-
-        .progress {
-          height: 100%;
-          background-color: #673ab7;
+        &__name {
+          margin-bottom: 10px;
         }
 
-        .html {
-          width: 70%;
-        }
+        &__level {
+          width: 80%;
+          height: 10px;
+          margin: auto;
+          margin-bottom: 10px;
+          background-color: white;
+          outline: 1px solid #673ab7;
+          outline-offset: -1px;
 
-        .css {
-          width: 60%;
-        }
+          .progress {
+            height: 100%;
+            background-color: #673ab7;
+          }
 
-        .sass {
-          width: 50%;
-        }
+          .html {
+            width: 70%;
+          }
 
-        .js {
-          width: 52%;
-        }
+          .css {
+            width: 70%;
+          }
 
-        .chart {
-          width: 48%;
-        }
+          .sass {
+            width: 50%;
+          }
 
-        .git {
-          width: 51%;
-        }
+          .js {
+            width: 50%;
+          }
 
-        .webpack {
-          width: 49%;
-        }
+          .chart {
+            width: 30%;
+          }
 
-        .english {
-          width: 68%;
-        }
+          .git {
+            width: 45%;
+          }
 
-        .russian {
-          width: 100%;
+          .webpack {
+            width: 35%;
+          }
+
+          .english {
+            width: 55%;
+          }
+
+          .russian {
+            width: 100%;
+          }
         }
       }
     }
@@ -173,11 +178,10 @@ footer {
     &__list {
       display: flex;
       justify-content: space-between;
-      list-style: none;
+      // list-style: none;
       text-align: center;
       padding: 0;
       margin: 5px 30px;
-  
 
       &__item {
         display: flex;
@@ -186,7 +190,7 @@ footer {
         .icons {
           width: 20px;
           margin-right: 10px;
-        }        
+        }
       }
     }
   }

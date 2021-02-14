@@ -80,10 +80,16 @@ main .skills {
 main .skills__title {
   margin-bottom: 5px;
 }
+main .skills__info {
+  padding: 0;
+}
 main .skills__info .skill {
+  list-style: none;
+}
+main .skills__info .skill__name {
   margin-bottom: 10px;
 }
-main .skills__info .level {
+main .skills__info .skill__level {
   width: 80%;
   height: 10px;
   margin: auto;
@@ -92,35 +98,35 @@ main .skills__info .level {
   outline: 1px solid #673ab7;
   outline-offset: -1px;
 }
-main .skills__info .level .progress {
+main .skills__info .skill__level .progress {
   height: 100%;
   background-color: #673ab7;
 }
-main .skills__info .level .html {
+main .skills__info .skill__level .html {
   width: 70%;
 }
-main .skills__info .level .css {
-  width: 60%;
+main .skills__info .skill__level .css {
+  width: 70%;
 }
-main .skills__info .level .sass {
+main .skills__info .skill__level .sass {
   width: 50%;
 }
-main .skills__info .level .js {
-  width: 52%;
+main .skills__info .skill__level .js {
+  width: 50%;
 }
-main .skills__info .level .chart {
-  width: 48%;
+main .skills__info .skill__level .chart {
+  width: 30%;
 }
-main .skills__info .level .git {
-  width: 51%;
+main .skills__info .skill__level .git {
+  width: 45%;
 }
-main .skills__info .level .webpack {
-  width: 49%;
+main .skills__info .skill__level .webpack {
+  width: 35%;
 }
-main .skills__info .level .english {
-  width: 68%;
+main .skills__info .skill__level .english {
+  width: 55%;
 }
-main .skills__info .level .russian {
+main .skills__info .skill__level .russian {
   width: 100%;
 }
 
@@ -142,7 +148,6 @@ footer .contacts__title {
 footer .contacts__list {
   display: flex;
   justify-content: space-between;
-  list-style: none;
   text-align: center;
   padding: 0;
   margin: 5px 30px;
